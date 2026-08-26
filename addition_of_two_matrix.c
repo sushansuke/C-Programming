@@ -23,8 +23,8 @@ int main() {
     printf("Enter the number of Columns:");
     scanf("%d",&b);
     printf("Enter the element row wise :\n");
-    for(i=0;i<r;i++){
-         for(j=0;j<c;j++)
+    for(i=0;i<a;i++){
+         for(j=0;j<b;j++)
          {
             scanf("%d",&ary2[i][j]);
          }
@@ -39,13 +39,36 @@ int main() {
          }
              } 
         printf("\nThe 2nd  matrix  \n");
-        for(i=0;i<r;i++){
+        for(i=0;i<a;i++){
             printf("\n");
-         for(j=0;j<c;j++)
+         for(j=0;j<b;j++)
          {
             printf("  %d  ",ary2[i][j]);
          }
              } 
-             if()
+         // Addition of two matrix 
+
+             if(a==r
+            && b==c)
+             {
+                 for(i=0;i<r;i++){
+                     for(j=0;j<c;j++)
+                     {
+                         ary3[i][j]=ary1[i][j]+ary2[i][j];
+                     }
+                 }
+                 printf("\nThe Addition of two matrix is :\n");
+                 for(i=0;i<r;i++){
+                     printf("\n");
+                     for(j=0;j<c;j++)
+                     {
+                         printf("  %d  ",ary3[i][j]);
+                     }
+                 }
+             }
+             else
+             {
+                 printf("\nAddition of two matrix is not possible\n");
+             }
         
             return 0;}
