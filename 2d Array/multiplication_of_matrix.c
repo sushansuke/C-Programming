@@ -46,6 +46,14 @@ int main() {
             printf("  %d  ",ary2[i][j]);
          }
              } 
+             // reinitialize of result array
+        for(i = 0; i < r; i++)
+         {
+             for(j = 0; j < b; j++)
+             {
+            ary3[i][j] = 0;
+             }
+        }
         //matrix multiplication 
 
         if(c==a){
