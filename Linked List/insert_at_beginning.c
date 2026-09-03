@@ -24,6 +24,18 @@ temp=malloc(sizeof(struct Node ));
 temp->data=40;
 head->next->next->next=temp;
  temp->next=NULL;
+
+//insert a beginning 
+temp = malloc(sizeof(struct Node));
+
+    temp->data = 5;
+
+    temp->next = head;
+
+    head = temp;
+
+
+
  temp=head;
 
 while(temp!=NULL)
@@ -33,3 +45,5 @@ while(temp!=NULL)
 }
  return 0;
 }
+
+

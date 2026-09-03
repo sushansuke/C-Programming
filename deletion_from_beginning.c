@@ -26,6 +26,15 @@ head->next->next->next=temp;
  temp->next=NULL;
  temp=head;
 
+ //deletion from begining
+ head=head->next;
+free(temp);
+
+temp=head;
+
+//displaying
+
+
 while(temp!=NULL)
 {
       printf(" \n %d",temp->data);

@@ -68,8 +68,7 @@ int main() {
                 
             }
 
-        
-        printf("\nThe Result  matrix  \n");
+             printf("\nThe Result  matrix  \n");
         for(i=0;i<r;i++){
             printf("\n");
          for(j=0;j<b;j++)

@@ -7,6 +7,7 @@ struct Node {
 int main () {
 struct Node *head;
 struct Node *temp;
+struct Node *new;
 
 head=malloc(sizeof(struct Node));
 head->data= 10;
@@ -26,10 +27,30 @@ head->next->next->next=temp;
  temp->next=NULL;
  temp=head;
 
+//insert at end
+new=malloc(sizeof(struct Node));
+new->data=40;
+new->next=NULL;
+
+temp=head;
+
+//find the  last Node 
+
+while(temp->next!=NULL)
+{
+         temp=temp->next;
+} 
+temp->next=new;
+
+temp=head;
+
 while(temp!=NULL)
 {
-      printf(" \n %d",temp->data);
-         temp=temp->next;
+    printf("\n %d",temp->data);     
+    temp=temp->next;
 }
+
  return 0;
 }
+
+
